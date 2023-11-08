@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../steps"
+		},
+		{
+			"path": "../../travel-list"
+		}
+	],
+	"settings": {}
+}
