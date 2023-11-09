@@ -92,7 +92,7 @@ img{
 }
 
 .card  h5{
-  font-weight:5px;
+  font-weight:2px;
   padding:10px;
 
 }
@@ -211,7 +211,7 @@ button{
   margin-left: 10%;
   display:grid;
   grid-template-columns: 1fr 1fr;
-  column-gap:10%;
+  column-gap:5%;
 
 }
 .filter{
