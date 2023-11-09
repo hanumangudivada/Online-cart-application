@@ -55,9 +55,9 @@ html {
   display:grid;
   grid-template-columns:200px 200px 200px;
   position: relative;
-  left:10%;
+  left:5%;
   margin-top: 10px;
-  background-color:greenyellow;
+  background-color:powderblue;
   width:fit-content;
   padding:2em;
 }
