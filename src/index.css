@@ -9,9 +9,17 @@
 html {
   scroll-behavior: smooth;
 }
+.App{
+  width:100%;
+  background-color:gray;
+
+}
 .wrapper{
-  width:95%;
+  width:90%;
   margin:0 auto;
+  margin-left:5%;
+  
+
 
 }
 .search-container{
@@ -47,7 +55,7 @@ html {
   display:grid;
   grid-template-columns:200px 200px 200px;
   position: relative;
-  left:25%;
+  left:15%;
   margin-top: 10px;
   background-color:powderblue;
   width:fit-content;
@@ -105,6 +113,12 @@ button{
   margin-right:3px;
   cursor: pointer;
 }
+@media (max-width: 600px) {
+  button {
+    max-width: 100%; /* Allow the button to take full width on smaller screens */
+    margin-right: 0; /* Remove right margin on smaller screens */
+  }
+}
 .button-value{
   border:2px solid black;
   background-color: #6759ff;
@@ -131,20 +145,28 @@ button{
   margin-top: 30px;
   flex-direction: column;
   align-items: center;
+  max-width: 100%;
   justify-content: space-between;
 }
+
 .cartElement {
   display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
   justify-content: space-between;
-  width:700px;
-  padding:20px;
-  border:1px solid;
-  margin-top:10px;
+  width: 100%; /* Take full width of its container */
+  max-width:fit-content; /* Set a maximum width for larger screens */
+  padding: 20px;
+  border: 1px solid;
+  margin-top: 10px;
+  margin-left:-10%;
   background-color: bisque;
-  
+}
 
-
-  
+/* Media query for screens smaller than 600px */
+@media (max-width: 600px) {
+  .cartElement {
+    max-width: 100%; /* Allow the cart element to take full width on smaller screens */
+  }
 }
 
 .cartElement img{
@@ -169,20 +191,33 @@ button{
   
 }
 .side{
-  display:flex;
-  justify-content: space-between;
+  margin-left: 10%;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap:10%;
+
 }
 .filter{
-  margin-top:10px;
+  position: sticky;
+  top:10px;
   border:2px solid blue;
   background-color:powderblue;
-  width:300px;
+  width:100%;
+  max-width: 300px;
   height:500px;
-  margin-right:20px;
+  margin-right:2em;
 
 }
 .filter h3{
   color:blue;
+}
+/* Media query for screens smaller than 600px */
+@media (max-width: 600px) {
+  .filter {
+    max-width: 100%; /* Allow the filter to take full width on smaller screens */
+    max-width: 100%;
+    margin-right: 0; /* Remove right margin on smaller screens */
+  }
 }
 
 .price-filter{

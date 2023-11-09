@@ -193,7 +193,7 @@ function App() {
   const [pricerange,setpricerange]=useState([]);
   const [brand,setbrand]=useState("U.S.POLO ASSN");
   const[brandlist,setbrandlist]=useState([]);
- 
+
   useEffect(()=>{
     console.log("useffect runs");
     //when we are trying to access the object using variable we should not use "."operator ,we should use "[variable]" to access the object.
@@ -228,7 +228,6 @@ function App() {
         <Pricefilter pricerange={pricerange} setpricerange={setpricerange}/>
         <BrandFilter brand={brand} setbrand={setbrand} brandlist={brandlist}/>
         </Filter>
-        
       </div>
       <Cart cartItems={cartItems} RemoveItem={RemoveItem} setcartItems={setcartItems}/>
      </div>
@@ -291,12 +290,22 @@ function Item({data,Addcart,searchItem,pricerange,brand}){
 
 function Cart({cartItems,RemoveItem,setcartItems}){
   const [total, setTotal] = useState(0); // State to store the total
+  const cartRef=useRef();
 
   // Update the total whenever cartItems change
   useEffect(() => {
     const newTotal = cartItems.reduce((acc, item) => acc + item.itemcount, 0);
     setTotal(newTotal);
+  // Set focus on the cart element when cartItems change
+  setTimeout(() => {
+    if (cartRef.current) {
+      cartRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, 0);
+  
   }, [cartItems]);
+  
+
 
 
   function Addcount(id){
@@ -315,7 +324,7 @@ function Cart({cartItems,RemoveItem,setcartItems}){
  
   return(
     cartItems.length!==0?
-    <div className='Cart'>
+    <div className='Cart' ref={cartRef}>
       <h3>{`Cart(${cartItems.length})`}</h3>
       <h4>{`Total items ${total}`}</h4>
       {cartItems.map((item)=>
