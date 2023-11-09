@@ -55,7 +55,7 @@ html {
   display:grid;
   grid-template-columns:200px 200px 200px;
   position: relative;
-  left:15%;
+  left:10%;
   margin-top: 10px;
   background-color:powderblue;
   width:fit-content;
