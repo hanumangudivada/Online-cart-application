@@ -10,7 +10,7 @@ html {
   scroll-behavior: smooth;
 }
 .App{
-  width:100%;
+  width:fit-content;
   background-color:gray;
 
 }
