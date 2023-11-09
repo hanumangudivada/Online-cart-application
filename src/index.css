@@ -11,7 +11,7 @@ html {
 }
 .App{
   width:fit-content;
-  background-color:palegoldenrod;
+  background-color:white;
   height: 100%; /* Set a specific height or use a percentage value */
   overflow: auto;
 
@@ -87,7 +87,7 @@ img{
 }
 
 .card  h5{
-  font-weight: 500;
+  font-weight: 300;
   padding:10px;
 
 }
@@ -124,7 +124,7 @@ button{
 @media (max-width: 600px) {
   button {
     max-width: 100%; /* Allow the button to take full width on smaller screens */
-    margin-right: 0; /* Remove right margin on smaller screens */
+    margin-right:0; /* Remove right margin on smaller screens */
   }
 }
 .button-value{
@@ -222,9 +222,9 @@ button{
 /* Media query for screens smaller than 600px */
 @media (max-width: 600px) {
   .filter {
+    position: sticky;
     max-width: 100%; /* Allow the filter to take full width on smaller screens */
-    max-width: 100%;
-    margin-right: 0; /* Remove right margin on smaller screens */
+    margin-right:2em; /* Remove right margin on smaller screens */
   }
 }
 
