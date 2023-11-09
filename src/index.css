@@ -49,9 +49,6 @@ html {
   border-radius: 20px;
   cursor: pointer;
 }
-.active:hover{
-  background-color:lightgrey;
-}
 
 .cards{
   display:grid;
@@ -71,6 +68,7 @@ html {
 }
 
 .card{
+  position: relative;
   background-color: #ffffff;
   max-width:12em;
   margin-top:1em;
@@ -78,8 +76,15 @@ html {
   padding:1em;
   border-radius: 5px;
   box-shadow:1em 2em 2.5em rgba(1,2,68,0.08);
-  position: relative;
 }
+.active{
+  transition:transform 1s ease-in-out ;
+}
+.active:hover{
+  background-color:gainsboro;
+  transform:translate(-7px,-7px);
+}
+
 img{
   max-width:100%;
   object-fit:contain;
@@ -149,6 +154,8 @@ button{
 
 }
 .Cart{
+  position: relative;
+  left:-150px;
   display:flex;
   margin-top: 30px;
   flex-direction: column;
@@ -158,6 +165,8 @@ button{
 }
 
 .cartElement {
+  position: relative;
+  left:1px;
   display: flex;
   flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
   justify-content: space-between;
@@ -165,11 +174,11 @@ button{
   max-width:fit-content; /* Set a maximum width for larger screens */
   padding: 20px;
   border: 1px solid;
-  margin-top: 10px;
-  margin-left:-10%;
-  background-color: bisque;
-}
+  margin-bottom:5px;
+  background-color:powderblue;
+  transition:transform 2s;
 
+}
 /* Media query for screens smaller than 600px */
 @media (max-width: 600px) {
   .cartElement {
@@ -206,27 +215,20 @@ button{
 
 }
 .filter{
-  position: sticky;
-  top:10px;
-  border:2px solid blue;
+  position:relative;
+  top:11px;
+  right:10px;
   background-color:powderblue;
   width:100%;
   max-width: 200px;
   height:500px;
-  margin-right:4em;
+ 
 
 }
 .filter h3{
   color:blue;
 }
-/* Media query for screens smaller than 600px */
-@media (max-width: 600px) {
-  .filter {
-    position: sticky;
-    max-width: 100%; /* Allow the filter to take full width on smaller screens */
-    margin-right:2em; /* Remove right margin on smaller screens */
-  }
-}
+
 
 .price-filter{
   margin:20px;
