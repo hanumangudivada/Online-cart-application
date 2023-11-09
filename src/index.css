@@ -11,7 +11,7 @@ html {
 }
 .App{
   width:fit-content;
-  background-color:gray;
+  background-color:palegoldenrod;
   height: 100%; /* Set a specific height or use a percentage value */
   overflow: auto;
 
