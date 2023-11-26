@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter,Routes, Route} from 'react-router-dom';
+import { HashRouter,Routes, Route} from 'react-router-dom';
 import { Contextitems,TotalContext,Items} from './Contextitems';
 import HomePage from './components/HomePage';
 import Products from './Products/Products';
@@ -10,14 +10,14 @@ function App() {
   return(
     <Contextitems>
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
       <Routes>
         <Route path="/" element={<HomePage/>}></Route>
         <Route path="/products" element={<Products TotalContext={TotalContext}/>}/>
         <Route path="/itemdescription/:itemid" element={<ItemDesc TotalContext={TotalContext} Items={Items} />}></Route>
         <Route path="/cart" element={<Cart TotalContext={TotalContext}/>}></Route>
       </Routes>
-      </BrowserRouter>
+      </HashRouter>
      </div>
      </Contextitems>
   );
