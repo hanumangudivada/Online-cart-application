@@ -13,7 +13,7 @@ function SearchItem({TotalContext}){
     return( 
     <div className={styles.ItemButtons}>
     {elements.map((element,index)=><button className={`${activebtn===element?"button-value":"nav-button"}`} key={index} onClick={()=>handleSearchItem(element)}>{element}</button>)}
-   <div className="nav"> <NavLink to="/home" className="navlink"><h3>HomePage</h3></NavLink>
+   <div className="nav"> <NavLink to="/" className="navlink"><h3>HomePage</h3></NavLink>
     <NavLink to="/cart" className="navlink"><h3>Cart</h3></NavLink></div>
     </div>) ;
   }

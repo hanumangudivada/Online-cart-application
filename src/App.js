@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
       <Routes>
-        <Route path="/home" element={<HomePage/>}></Route>
+        <Route path="/" element={<HomePage/>}></Route>
         <Route path="/products" element={<Products TotalContext={TotalContext}/>}/>
         <Route path="/itemdescription/:itemid" element={<ItemDesc TotalContext={TotalContext} Items={Items} />}></Route>
         <Route path="/cart" element={<Cart TotalContext={TotalContext}/>}></Route>

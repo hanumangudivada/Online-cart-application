@@ -2,7 +2,6 @@ import { NavLink, useParams} from "react-router-dom";
 import { useState,useEffect } from "react";
 import styles from "./ItemDesc.module.css";
 import { useContext } from "react";
-import NavBar from "./NavBar";
 export default function ItemDesc({TotalContext,Items}){
     const {AddCart}=useContext(TotalContext);
     const {itemid}=useParams();
@@ -19,7 +18,11 @@ export default function ItemDesc({TotalContext,Items}){
      ,[itemNumber]);
     return(
         <>
-        <NavBar/>
+        <div className="nav">
+       <NavLink to="/" className="navlink"><h3>HomePage</h3></NavLink>
+       <NavLink to="/products" className="navlink"><h3>Products</h3></NavLink>
+       <NavLink to="/cart" className="navlink"><h3>Cart</h3></NavLink>
+       </div>
      <div className={styles.item}>
         <img src={ItemData[0].image} alt="ok"/>
         <div className={styles.itemdes}>

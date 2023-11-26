@@ -34,7 +34,7 @@
       cartItems.length!==0?
       <div>
         <div className="nav">
-       <NavLink to="/home" className="navlink"><h3>HomePage</h3></NavLink>
+       <NavLink to="/" className="navlink"><h3>HomePage</h3></NavLink>
        <NavLink to="/products" className="navlink"><h3>Products</h3></NavLink></div>
       <div className='Cart' ref={cartRef}>
         <h3>{`Cart(${cartItems.length})`}</h3>
@@ -46,6 +46,9 @@
       </div>
       :
       <div>
+       <div className="nav">
+       <NavLink to="/" className="navlink"><h3>HomePage</h3></NavLink>
+       <NavLink to="/products" className="navlink"><h3>Products</h3></NavLink></div>
       <div className="Cart">
       <h4>Your Cart is Empty
       </h4>
