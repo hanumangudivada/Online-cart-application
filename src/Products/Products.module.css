@@ -1,0 +1,10 @@
+
+.outerproducts{
+    display: flex;
+    justify-content: space-between;
+    background-color:cadetblue;
+    width:100vw;
+    margin-top:95px;
+}
+
+

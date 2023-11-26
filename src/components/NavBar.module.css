@@ -1,0 +1,22 @@
+/* there is a strong relation between z-index and position:absolute*/
+.nav{
+    position: absolute;
+    top:5px;
+    right:10px;
+    display:flex;
+    float:right;
+    justify-content: space-between;
+    align-items:center;
+
+}
+.nav .navlink{
+    text-decoration: none;
+    color:black;
+    font-size:1.5em;
+    padding:1em;
+    transition:transform 3s ease;
+}
+.nav .navlink:hover{
+    transform: scale(1.2,1.2);
+    color:green;
+}

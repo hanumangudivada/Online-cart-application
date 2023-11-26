@@ -1,0 +1,90 @@
+.item{
+    display:flex;
+    justify-content: space-between;
+    margin-top:100px;
+}
+.item img{
+    box-shadow: 20px 20px 50px 15px cadetblue;;
+    width:50vw;
+    height:100vh;
+}
+.itemdes{
+    margin-left: 20px;
+    font-size: 1vw;
+    background:linear-gradient( to left top,cadetblue,white);
+    width:40vw;
+    height:100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.itemdes .category{
+    position: absolute;
+    padding:0.1em;
+    font-size:2em;
+    top:0;
+    left:0;
+    border:none;
+    background-color: lightgreen;
+}
+.itemdes .productName{
+    font-size:1.7em;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    top:50px;
+    left:0;
+    color:black;
+    
+}
+
+.itemdes .price{
+    padding:0.1em;
+    font-size:1.7em;
+    position: absolute;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    top:100px;
+    left:0;
+}
+.itemdes .price{
+    border:none;
+    background-color: lightgreen;
+}
+.available{
+    font-size:1.2em;
+    position: absolute;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    top:150px;
+    left:0;
+    margin:5px;
+
+}
+ul {
+    list-style-type: none;
+  }
+  
+  li {
+    list-style-image: url('https://rukminim2.flixcart.com/www/36/36/promos/06/09/2016/c22c9fc4-0555-4460-8401-bf5c28d7ba29.png?q=90');
+    padding: 10px;
+  }
+
+.buttoncart{
+    font-size: 1em;
+    position: absolute;
+    bottom:40px;
+    left:17%;
+    width:20em;
+    padding:1em;
+    height:3em;
+    border-radius: 30px;
+    margin-right:3px;
+    text-align: center;
+    cursor: pointer;
+    background-color:lightgreen;
+}
+.buttoncart:hover{
+    border:2px solid black;
+
+}
+
+
+

@@ -1,0 +1,66 @@
+
+.Homepage{
+    font-size: 1em;
+    width:100vw;
+    height:100vh;
+    margin:0;
+    overflow: hidden;
+    background-image: url("https://c1.peakpx.com/wallpaper/573/909/315/store-clothes-clothing-line-fashion-wallpaper.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.7; 
+    z-index: -1;   
+    
+}
+.container {
+    font-size:5vw;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index:2;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+
+
+  }
+.heading{
+    padding:10px;
+    color:black;
+    font-size:1em;
+    font-weight:1em;
+    position: relative;
+    
+}
+.heading::before{
+    content:" ";
+    position: absolute;
+    top:0px;
+    width:50%;
+    height:5px;
+    left: 0;
+    background-color: red;
+    transition: transform 3s ease; 
+
+}
+.heading::after{
+    content:" ";
+    position: absolute;
+    bottom:0px;
+    width:50%;
+    height:5px;
+    background-color: red;
+    right: 0;
+    transition: transform 3s ease; 
+
+}
+  
+.heading:hover::before{
+    transform: translateX(100%);
+}
+.heading:hover::after{
+    transform: translateX(-100%);
+}
+

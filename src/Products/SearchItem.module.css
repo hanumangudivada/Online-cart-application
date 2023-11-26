@@ -1,0 +1,16 @@
+
+.ItemButtons{
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 1000;
+    background-color: cadetblue;
+    width:100%;
+    display:flex;
+    font-size: 1em;
+    padding:0.5em;
+    align-items: center;
+
+}
+
+
