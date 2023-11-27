@@ -1,6 +1,6 @@
 
 .Homepage{
-    font-size: 1em;
+    font-size:1em;
     width:100vw;
     height:100vh;
     margin:0;
@@ -39,7 +39,7 @@
 
 .container .inside{
     margin:20px;
-    font-size: 5vw;
+    font-size: 6vw;
     position: relative
 
 
@@ -68,7 +68,7 @@
     background-image: url(" https://www.kindpng.com/picc/m/650-6504916_shop-online-wth-halo-metrics-shopping-cart-hd.png");
     background-size: cover;
     animation-name: moveImage;
-    animation-duration: 10s;
+    animation-duration: 5s;
     animation-timing-function: linear;
     animation-iteration-count: 1; 
     animation-fill-mode: forwards; 
