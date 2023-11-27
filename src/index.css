@@ -72,10 +72,21 @@ button{
   align-items: center;
   padding:10px;
   width:100vw;
-  height:fit-content;
-  justify-content: space-between;
+  height:100vh;
   overflow-y: scroll;
 }
+.Empty{
+  background-color: cadetblue;
+  height:100vh;
+  margin-top: 100px;
+}
+.Empty h4{
+  font-size: 1.5em;
+}
+.emptycart{
+  margin-top:20px;
+}
+
 
 .cartElement {
   font-size:0.9em;
@@ -92,9 +103,8 @@ button{
 }
 .cartElement img{
   width:5em;
-  height:4em;
+  height:3em;
 
-  
 }
 
 .cartElement button{

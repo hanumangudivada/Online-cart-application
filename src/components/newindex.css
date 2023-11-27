@@ -243,6 +243,40 @@
   .brand-filter h4{
     padding:10px;
   }
+
+  .heading::before{
+    content:" ";
+    position: absolute;
+    top:0px;
+    width:50%;
+    height:5px;
+    left: 0;
+    background-color: red;
+    animation: moveLine 5s infinite alternate;
+
+
+}
+.heading::after{
+    content:" ";
+    position: absolute;
+    bottom:0px;
+    width:50%;
+    height:5px;
+    background-color: red;
+    right: 0;
+    animation: moveLine 5s infinite alternate-reverse;
+
+
+}
+  
+@keyframes moveLine {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
   
   
   

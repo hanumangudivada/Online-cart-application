@@ -49,10 +49,11 @@
        <div className="nav">
        <NavLink to="/" className="navlink"><h3>HomePage</h3></NavLink>
        <NavLink to="/products" className="navlink"><h3>Products</h3></NavLink></div>
-      <div className="Cart">
+      <div className="Empty">
       <h4>Your Cart is Empty
       </h4>
-      <img src="https://assets.materialup.com/uploads/16e7d0ed-140b-4f86-9b7e-d9d1c04edb2b/preview.png"/>
+      <div className="emptycart">
+      <img src="https://assets.materialup.com/uploads/16e7d0ed-140b-4f86-9b7e-d9d1c04edb2b/preview.png"/></div>
       </div>
       </div>
       

@@ -7,8 +7,8 @@
     border-radius: 5px;
     box-shadow:1em 2em 2.5em rgba(1,2,68,0.08);
   }
-.active{
-    transition:transform 1s ease-in-out ;
+.card:hover{
+  background-color: gray;
   }
 img{
     width:100%;
