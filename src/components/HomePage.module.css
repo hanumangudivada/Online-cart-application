@@ -39,7 +39,7 @@
 
 .container .inside{
     margin:20px;
-    font-size: 6vw;
+    font-size: 5vw;
     position: relative
 
 
@@ -95,7 +95,7 @@
         top: 65%;
     }
     100% {
-        left:49%;
+        left:50%;
         top: 15%;
     }
 }
