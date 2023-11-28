@@ -28,13 +28,12 @@
     background-color: lightgreen;
 }
 .itemdes .productName{
-    font-size:2em;
+    font-size:1.5em;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     position: absolute;
     top:50px;
     left:0;
     color:black;
-    
 }
 
 .itemdes .price{
@@ -94,10 +93,10 @@ ul {
 @media (max-aspect-ratio: 9/16) {
     /* Adjust styles for portrait orientation or tall screens */
     .item{
-        margin-top:40px;
+        margin-top:50px;
     }
     .buttoncart{
-        top:60%;
+        top:50%;
     }
     .available ul li{
         padding: 5px;
@@ -106,7 +105,7 @@ ul {
         padding:1em;
     }
     .itemdes .category{
-        padding: 1em;
+        padding:0.5em;
     }
     .available h5{
         padding: 1em;

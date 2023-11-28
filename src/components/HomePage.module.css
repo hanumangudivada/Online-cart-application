@@ -30,7 +30,7 @@
 .heading{
     padding:10px;
     color:white;
-    font-size:1em;
+    font-size:5vw;
     font-weight:1em;
     position: relative; 
     word-spacing: 6vw;
@@ -102,17 +102,17 @@
 @media (max-aspect-ratio: 9/16) {
     /* Adjust styles for portrait orientation or tall screens */
     .heading{
-      font-size: 2em;
+      font-size:1em;
       padding:0.1em;
-      word-spacing:12vw;
+      word-spacing:6vw;
     }
     .inside .image{
-        width:2em;
-        height:4em;
+        width:5vw;
+        height:3vh;
         border-radius:20px;
     }
     .quotes{
-        font-size: 0.6em;
+        font-size:3vw;
         
     }
     
