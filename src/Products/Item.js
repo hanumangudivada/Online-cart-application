@@ -16,7 +16,7 @@ import { Link, NavLink } from "react-router-dom";
 
   
       </div>:
-      searchItem===data.category &&(Number(data.price)>=pricerange[0] && Number(data.price)<=pricerange[1]) &&(data.brand===brand)?<div className={styles.card}>
+  searchItem===data.category &&(Number(data.price)<=Number(pricerange[1]) && Number(data.price)>=Number(pricerange[0]))&& data.brand===brand?<div className={styles.card}>
       <p className={styles.brand}>{data.brand}</p>
       <img src={data.image} alt="ok"></img>
       <h5>{data.productName}</h5>

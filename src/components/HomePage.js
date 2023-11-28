@@ -9,7 +9,7 @@ export default function HomePage(){
         const handleAnimationEnd = () => {
           // Add border after the animation is complete
           imageref.current.style.border = '5px solid #5F9EA0';
-          headingref.current.style.color="#3F000F";
+          headingref.current.style.color="lightcyan";
           quoteref.current.className=`${styles.quotes}`;
 
 
@@ -34,8 +34,8 @@ export default function HomePage(){
             <div className={styles.inside}>
         <div className={styles.image} ref={imageref}>
         </div>
-        <h1 className={styles.heading} ref={headingref}>Online <span>Cart</span></h1>
-        <h3 className={styles.quote} ref={quoteref}>"Styles in your Cart,Fashion in you Heart"</h3>
+        <h1 className={styles.heading} ref={headingref}>Stylish <span>Cart</span></h1>
+        <h3 className={styles.quote} ref={quoteref}>"Styles in your Cart,Fashion in your Heart"</h3>
          </div></div>
          
          <NavBar/>

@@ -3,7 +3,7 @@ import { useState,useEffect } from "react";
 import styles from "./ItemDesc.module.css";
 import { useContext } from "react";
 export default function ItemDesc({TotalContext,Items}){
-    const {AddCart}=useContext(TotalContext);
+    const {AddCart,cartItems}=useContext(TotalContext);
     const {itemid}=useParams();
     console.log(itemid);
     console.log(Items);
@@ -21,7 +21,11 @@ export default function ItemDesc({TotalContext,Items}){
         <div className="nav">
        <NavLink to="/" className="navlink"><h3>HomePage</h3></NavLink>
        <NavLink to="/products" className="navlink"><h3>Products</h3></NavLink>
-       <NavLink to="/cart" className="navlink"><h3>Cart</h3></NavLink>
+       <NavLink to="/cart" className="navlink">
+       <div className="innerCart"><h3>Cart</h3>
+                <div className="cartvalue">{cartItems.length}</div>
+                </div>
+       </NavLink>
        </div>
      <div className={styles.item}>
         <img src={ItemData[0].image} alt="ok"/>
