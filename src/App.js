@@ -28,7 +28,7 @@ function Search({children}){
             <div className="search-container">
                 <input type="search" className="search-input" placeholder="Search product name here.."></input>
                 <button className="search">Search</button>
-                </div>
+                </div>git
                 {children}
             </div>
 );

@@ -54,8 +54,23 @@ button{
 @media screen and (max-width: 600px) {
   .filter{
     position: sticky;
+    top:5%;
     width:40%;
     height: fit-content;
+  }
+  .filter h3{
+    font-size: 2vh;
+  }
+  .price-filter{
+    font-size: 1vh;
+  }
+  .brand-filter{
+    font-size: 1vh;
+  }
+  .selectbrand{
+    margin-left:-10px;
+    width:9vh;
+    height:2vh;
   }
    }
 

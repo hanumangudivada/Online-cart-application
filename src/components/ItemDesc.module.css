@@ -104,12 +104,16 @@ ul {
         font-size: 0.5vh;
         padding:5px;
     }
+    .itemdes .productName{
+        font-size: 1vh;
+    }
     .itemdes .price{
-        padding:1em;
+        padding:0.5vh;
+        font-size: 2vh;
     }
     .itemdes .category{
         font-size:2vh;
-        padding:0.5em;
+        padding:0.5vh;
     }
     .available h5{
         font-size:1.4vh;
@@ -120,7 +124,7 @@ ul {
         width:10vh;
         font-size:1vh;
         bottom:10%;
-        left:-20%;
+        left:-10%;
     }
 }
 
