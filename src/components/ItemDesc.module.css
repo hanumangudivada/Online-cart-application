@@ -28,7 +28,7 @@
     background-color: lightgreen;
 }
 .itemdes .productName{
-    font-size:1.7em;
+    font-size:2em;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     position: absolute;
     top:50px;
@@ -49,6 +49,12 @@
     border:none;
     background-color: lightgreen;
 }
+.available h5{
+    border: none;
+    background-color: lightgreen;
+    padding: 0.2em;
+}
+
 .available{
     font-size:1.2em;
     position: absolute;
@@ -91,7 +97,19 @@ ul {
         margin-top:40px;
     }
     .buttoncart{
-        top:50%;
+        top:60%;
+    }
+    .available ul li{
+        padding: 5px;
+    }
+    .itemdes .price{
+        padding:1em;
+    }
+    .itemdes .category{
+        padding: 1em;
+    }
+    .available h5{
+        padding: 1em;
     }
 }
 

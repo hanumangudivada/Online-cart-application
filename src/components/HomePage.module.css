@@ -13,6 +13,7 @@
     
 }
 .container {
+    width:100vw;
     display: flex;
     font-size:5vw;
     position: absolute;
@@ -24,8 +25,8 @@
     left:50%;
     transform: translate(-50%, -50%);
 
-
   }
+
 .heading{
     padding:10px;
     color:white;
@@ -37,8 +38,9 @@
 
 .container .inside{
     margin:20px;
-    font-size: 5vw;
-    position: relative
+    width:80vw;
+    font-size: 6vw;
+    position: relative;
 
 }
  .quote{
@@ -100,12 +102,18 @@
 @media (max-aspect-ratio: 9/16) {
     /* Adjust styles for portrait orientation or tall screens */
     .heading{
-      font-size: 0.4em;
+      font-size: 2em;
+      padding:0.1em;
+      word-spacing:12vw;
     }
     .inside .image{
-        width:0.5em;
-        height:0.7em;
+        width:2em;
+        height:4em;
         border-radius:20px;
+    }
+    .quotes{
+        font-size: 0.6em;
+        
     }
     
 }

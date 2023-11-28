@@ -125,6 +125,9 @@ button{
   height:3em;
 
 }
+.cartElement h5{
+  padding:2em;
+}
 
 .cartElement button{
   width:3em;
@@ -134,7 +137,7 @@ button{
 }
 .cartElement .remove{
   height:3em;
-  width:fit-content;
+  width:7em;
   padding:0.2em;
   background-color: red;
 }
@@ -147,7 +150,12 @@ button{
   .cartElement img{
     width:5em;
     height:3em;
+    padding:2em;
   
+  }
+  .cartElement h5{
+    padding:0.5em;
+    font-size:0.8em;
   }
   
   .cartElement button{
@@ -159,7 +167,7 @@ button{
   .cartElement .remove{
     height:5em;
     padding:1em;
-    width:fit-content;
+    width:20em;
     padding:0.2em;
     background-color: red;
   }
