@@ -63,7 +63,7 @@
     top:30%;
     left:0;
     width:1em;
-    height:1.7em;
+    height:1.3em;
     background-image: url(" https://www.kindpng.com/picc/m/650-6504916_shop-online-wth-halo-metrics-shopping-cart-hd.png");
     background-size: cover;
     animation-name: moveImage;
@@ -94,7 +94,7 @@
         top: 65%;
     }
     100% {
-        left:50%;
+        left:49%;
         top: 15%;
     }
 }
