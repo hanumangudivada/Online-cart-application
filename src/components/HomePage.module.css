@@ -3,7 +3,6 @@
     font-size:1em;
     width:100vw;
     height:100vh;
-    margin:0;
     overflow: hidden;
     background-image: url("https://img.freepik.com/free-photo/fast-fashion-concept-with-man-clothing-store_23-2150871308.jpg?t=st=1701137352~exp=1701140952~hmac=ec4f0133adc2ef0383dc4758854dc1422ab4562eabc8da343bb244c5a748f344&w=900");
     background-size:cover;
@@ -36,15 +35,12 @@
     word-spacing: 6vw;
 }
 
-
 .container .inside{
     margin:20px;
     font-size: 5vw;
     position: relative
 
-
 }
-
  .quote{
     color:black;
     font-size: 0.4em;
@@ -99,6 +95,19 @@
         left:50%;
         top: 15%;
     }
+}
+
+@media (max-aspect-ratio: 9/16) {
+    /* Adjust styles for portrait orientation or tall screens */
+    .heading{
+      font-size: 0.4em;
+    }
+    .inside .image{
+        width:0.5em;
+        height:0.7em;
+        border-radius:20px;
+    }
+    
 }
 
 

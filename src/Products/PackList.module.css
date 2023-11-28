@@ -1,10 +1,24 @@
 .cards{
     display:grid;
     grid-template-columns:repeat(3,1fr);
-    margin-top: 30px;
+    margin-top: 50px;
     background-color:powderblue;
     padding:1em;
     width:70vw;
     font-size:1.5vw;
   }
+  @media (max-aspect-ratio: 9/16) {
+    /* Adjust styles for portrait orientation or tall screens */
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      padding:1em;
+      width:50vw;
+      }
+   
+    
+  }
+
+ 
+    
   

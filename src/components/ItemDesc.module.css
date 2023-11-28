@@ -85,6 +85,18 @@ ul {
     border:2px solid black;
 
 }
+@media (max-aspect-ratio: 9/16) {
+    /* Adjust styles for portrait orientation or tall screens */
+    .item{
+        margin-top:40px;
+    }
+    .buttoncart{
+        top:50%;
+    }
+}
+
+  
+
 
 
 

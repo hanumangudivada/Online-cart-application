@@ -8,7 +8,7 @@ export default function HomePage(){
     useEffect(() => {
         const handleAnimationEnd = () => {
           // Add border after the animation is complete
-          imageref.current.style.border = '5px solid #5F9EA0';
+          imageref.current.style.border = '3px solid #5F9EA0';
           headingref.current.style.color="lightcyan";
           quoteref.current.className=`${styles.quotes}`;
 

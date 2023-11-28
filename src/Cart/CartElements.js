@@ -1,7 +1,7 @@
 import { useContext } from "react"
 
 export default function CartElements({Element,Addcount,Deletecount,TotalContext}){
-    const{RemoveItem,count}=useContext(TotalContext);
+    const{RemoveItem}=useContext(TotalContext);
     return(
       <div className='cartElement'>
         <img src={Element.image} alt="ok"></img>

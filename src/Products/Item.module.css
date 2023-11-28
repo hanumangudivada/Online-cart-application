@@ -21,14 +21,14 @@ img{
     padding:10px;
   
   }
-.brand{
+.card .brand{
     position: absolute;
     width:fit-content;
     height:10px;
     text-align: center;
     padding:5px;
     border-bottom-right-radius: 10px;
-    font-size:12px;
+    font-size:1vw;
     font-weight:5px;
     background-color:blueviolet;
     left:0px;
