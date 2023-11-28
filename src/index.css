@@ -144,31 +144,32 @@ button{
 @media (max-aspect-ratio: 9/16) {
   /* Adjust styles for portrait orientation or tall screens */
   .cartElement {
-    font-size:0.5em;
+    width:90vw;
     padding:10px;
   }
   .cartElement img{
-    width:5em;
-    height:3em;
-    padding:2em;
+    width:3vh;
+    height:3vh;
+    padding:1vh;
   
   }
   .cartElement h5{
-    padding:0.5em;
-    font-size:0.8em;
+    font-size: 1vh;
+    padding:0.5vh;
   }
   
   .cartElement button{
-    width:2em;
-    height:2em;
+    width:0.5vh;
+    height:1vh;
   
     
   }
   .cartElement .remove{
+    font-size: 0.5vh;
     height:5em;
-    padding:1em;
-    width:20em;
-    padding:0.2em;
+    padding:1vh;
+    width:20vh;
+    padding:0.2vh;
     background-color: red;
   }
 

@@ -1,7 +1,7 @@
 .item{
     display:flex;
     justify-content: space-between;
-    margin-top:130px;
+    margin-top:10%;
 }
 .item img{
     box-shadow: 20px 20px 50px 15px cadetblue;;
@@ -22,7 +22,7 @@
     position: absolute;
     padding:0.1em;
     font-size:2em;
-    top:0;
+    top:0%;
     left:0;
     border:none;
     background-color: lightgreen;
@@ -31,7 +31,7 @@
     font-size:1.5em;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     position: absolute;
-    top:50px;
+    top:10%;
     left:0;
     color:black;
 }
@@ -41,13 +41,12 @@
     font-size:1.7em;
     position: absolute;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    top:100px;
+    top:15%;
     left:0;
-}
-.itemdes .price{
     border:none;
     background-color: lightgreen;
 }
+
 .available h5{
     border: none;
     background-color: lightgreen;
@@ -55,10 +54,10 @@
 }
 
 .available{
-    font-size:1.2em;
+    font-size:1.4em;
     position: absolute;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    top:150px;
+    top:25%;
     left:0;
     margin:5px;
 
@@ -68,8 +67,9 @@ ul {
   }
   
   li {
+    font-size: 1vw;
     list-style-image: url('https://rukminim2.flixcart.com/www/36/36/promos/06/09/2016/c22c9fc4-0555-4460-8401-bf5c28d7ba29.png?q=90');
-    padding: 10px;
+    padding:2px;
   }
 
 .buttoncart{
@@ -88,27 +88,39 @@ ul {
 }
 .buttoncart:hover{
     border:2px solid black;
-
 }
 @media (max-aspect-ratio: 9/16) {
     /* Adjust styles for portrait orientation or tall screens */
     .item{
-        margin-top:50px;
+        margin-top:20%;
+    }
+    .itemdes{
+        width:50vw;
     }
     .buttoncart{
-        top:50%;
+        top:80%;
     }
     .available ul li{
-        padding: 5px;
+        font-size: 0.5vh;
+        padding:5px;
     }
     .itemdes .price{
         padding:1em;
     }
     .itemdes .category{
+        font-size:2vh;
         padding:0.5em;
     }
     .available h5{
+        font-size:1.4vh;
         padding: 1em;
+    }
+    .buttoncart{
+        position: absolute;
+        width:10vh;
+        font-size:1vh;
+        bottom:10%;
+        left:-20%;
     }
 }
 
